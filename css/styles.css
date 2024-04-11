@@ -1,0 +1,92 @@
+.login{
+  background-color: #212121;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+}
+
+body {
+  background-color: #212121;
+}
+
+
+#content, #navigation {
+    width: 1000px;
+	color: #fff;
+    margin: auto;
+}
+
+#tdSelf{
+  color: #fff;
+}
+
+#tdSelfH{
+  color: #be25b1;
+}
+
+.überschrift{
+  color: white;
+  margin-left: 10px;
+}
+
+.containerüberschrift{
+  color: white;
+}
+
+#tdSelfH2{
+  color: #72166a;
+}
+
+.card:hover{
+  transform: scale(1.01);
+}
+
+.card{
+  transition: transform .5s;
+  margin-bottom: 20px;
+}
+
+.nav-item:hover{
+  color: #be25b1;
+}
+
+.card-space{
+  margin-bottom: 20px;
+}
+
+
+
+.nav-item:checked{
+  color: red;
+}
+
+.nav-link:hover{
+  color: #be25b1;
+}
+
+.beschreibung{
+  background-color: #212121;
+  color: green;
+}
+
+table {
+  width: 90%;
+}
+
+.navbar{
+  position: sticky;
+  width: 100%;
+}
+
+.searchbar{
+  margin-left: 0;
+  background: black;
+  height: 1000px;
+  position: fixed;
+  width: 100%;
+}
+
+#emailForm{
+  color: #fff;
+}
