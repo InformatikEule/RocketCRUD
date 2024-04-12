@@ -57,7 +57,7 @@ if(isset($_POST['btnsound'])){
 			  <h5 class="card-title text-secondary text-center fs-5 m-0 p-0">Erstflug:</h5>
 			  <p class="card-text fs-6 m-1 p-0 text-center"><?php echo $rakete['FIRSTFLIGHT']; ?></p>
 			  <h5 class="card-title text-secondary text-center fs-5 m-0 p-0">Bild:</h5>
-			  <p class="card-text fs-6 m-1 p-0 text-center"><?php echo $rakete['BILD'] . "  "; ?><a href="mail.php"><input class="btn btn-secondary btn-sm m-0 p-0" type="submit" name="btnmail" value="Mail senden"></a></p>
+			  <p class="card-text fs-6 m-1 p-0 text-center"><?php echo $rakete['BILD'] . "  "; ?></p>
 			  <h5 class="card-title text-secondary text-center fs-5 m-0 p-0">Tags:</h5>
 			  <p class="card-text fs-6 m-1 p-0 text-center"><?php echo $rakete['TAGS']; ?></p>
 			  <h5 class="card-title text-secondary text-center fs-5 m-0 p-0">Priorität:</h5>

@@ -1,11 +1,7 @@
 <?php
-//TODO verbindung zu der DB auf einem NAS herstellen
 $host = "localhost";
-//name der DB hier ändern falls gewünscht:
 $name = "test"; 
-//root ist der standard-user für mariaDB. solltet ihr mit selbstangelegten nutzern arbeiten muss hier der Nutername hin:
 $user = "root";
-//wer hätte das gedacht, hier muss das PW rein:
 $passwort = "";
 
 
