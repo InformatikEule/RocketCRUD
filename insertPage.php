@@ -44,7 +44,7 @@ if(isset($_POST['send'])){
 <div class="überschrift">
  <h5>Einfügen einer Rakete in die Datenbank</h5>
  <span>Für jedes mal drücken des Submit Buttons wird ein neuer Eintrag erstellt. Es ist nicht notwendig in jedes Feld etwas einzutragen. Bei einigen wird es<br></span>
- <span>verlangt. Zum ändern von Daten (auch nachträgliches hinzufügen eines Feldes) bitte die dafür <a href="UPDATEpage.php">vorgesehene Seite</a> verwenden!</span>
+ <span>verlangt. Zum ändern von Daten (auch nachträgliches hinzufügen eines Feldes) bitte die dafür <a href="updatePage.php">vorgesehene Seite</a> verwenden!</span>
 </div>
 <br>
 <div class="container containerüberschrift">

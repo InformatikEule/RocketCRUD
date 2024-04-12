@@ -29,10 +29,10 @@
 			<a class="nav-link" href="probes.php">Satelliten anzeigen</a>
 		  </li>
           <li class="nav-item">
-            <a class="nav-link" href="INSERTpage.php">Eintrag anlegen</a>
+            <a class="nav-link" href="insertPage.php">Eintrag anlegen</a>
 		  </li>
 		  <li class="nav-item">
-			<a class="nav-link" href="UPDATEpage.php">Eintrag bearbeiten/löschen</a>
+			<a class="nav-link" href="updatePage.php">Eintrag bearbeiten/löschen</a>
 		  </li>
 		</ul>
       <form class="d-flex" action="search.php" method="POST">
