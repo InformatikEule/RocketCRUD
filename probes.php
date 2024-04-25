@@ -12,7 +12,7 @@ include 'header.php';
 	$mysql->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 
 	$mode = 'IN NATURAL LANGUAGE MODE';
-	$query = 'rover';
+	$query = 'satellit';
 	
 	
 	$sql = "SELECT *
@@ -24,6 +24,7 @@ include 'header.php';
 	$stmt->execute([
 	  ':searchQuery' => $query,
 	]);
+
 ?>
 <!--<h3 style="color: white;">TODO: sql error:"cant find fulltext" sobald ich mehrere spaltennamen in die query schreibe</h3>-->
 <div class="article-container">
@@ -31,7 +32,7 @@ include 'header.php';
 <div class="container-fluid">
   <div class="row">
 
-  <!-- FÜR JEDEN: Rover in der Datenbank: -->
+  <!-- FÜR JEDE: Rakete in der Datenbank: -->
   <?php foreach ($stmt as $rakete) : ?>
   <!-- lege die anzahl der Spalten fest und definiere die Karte -->
     <div class="col-sm-3">
