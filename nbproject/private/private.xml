@@ -5,8 +5,11 @@
         <group>
             <file>file:/C:/xampp/htdocs/RocketCRUD/css/styles.css</file>
             <file>file:/C:/xampp/htdocs/RocketCRUD/main.php</file>
+            <file>file:/C:/xampp/htdocs/RocketCRUD/raketen.php</file>
             <file>file:/C:/xampp/htdocs/RocketCRUD/mySQL.php</file>
             <file>file:/C:/xampp/htdocs/RocketCRUD/index.php</file>
+            <file>file:/C:/xampp/htdocs/RocketCRUD/rover.php</file>
+            <file>file:/C:/xampp/htdocs/RocketCRUD/probes.php</file>
             <file>file:/C:/xampp/htdocs/RocketCRUD/updatePage.php</file>
         </group>
     </open-files>

@@ -52,7 +52,7 @@ include 'header.php';
 		<?php else : ?>
 		  <div class="card-header text-center fs-4" style="background-color: #212529;"><?=$rakete->NAME?></div>
 		<?php endif ?>
-                     <img class="card-img-top" src="bilder/<?= $rakete->BILD?>" alt="Hallo">
+                     <img class="card-img-top" src="pics/<?= $rakete->BILD?>" alt="Hallo">
 			<div class="card-body" style="background-color:">
 			  <h5 class="card-title text-secondary text-center fs-5 m-0 p-0">ID:</h5>
 			  <p class="card-text fs-6 m-1 p-0 text-center"><?= $rakete->ID; ?></p>
