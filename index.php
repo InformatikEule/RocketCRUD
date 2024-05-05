@@ -7,7 +7,7 @@
   </head>
   <body>
   <div class="frontpic img-fluid rounded float-right mx-auto d-block">
-      <img style="max-width: 50%; max-height: 50%"  src="bilder/Artemis-titlepic.jpg">
+      <img style="max-width: 50%; max-height: 50%"  src="pics/Artemis-titlepic.jpg">
     <?php
     if(isset($_POST["submit"])){
       require("mysql.php");

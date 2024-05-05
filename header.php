@@ -34,6 +34,9 @@
 		  <li class="nav-item">
 			<a class="nav-link" href="updatePage.php">Eintrag bearbeiten/löschen</a>
 		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="acc.php">My Account</a>
+		  </li>
 		</ul>
       <form class="d-flex" action="search.php" method="POST">
         <input class="form-control me-2" type="text" name="btnkeyword" placeholder="Eintrag suchen" aria-label="Search">
