@@ -11,23 +11,23 @@ if(isset($_POST['update'])){
   $NAME = $_POST['NAME'];
   $DESCRIPTION = $_POST['DESCRIPTION'];
   $FIRSTFLIGHT = $_POST['FIRSTFLIGHT'];
-  $PICS = $_POST['PICS'];
   $BILD = $_POST['BILD'];
   $TAGS = $_POST['TAGS'];
   $PRIO = $_POST['PRIO'];
+  $PICS = $_POST['PICS'];
 
   $stmt = $mysql->prepare("UPDATE `raketen` SET `ID`=':ID', `CREATEDATE`=':CREATEDATE', `NAME`=':NAME', 
-  `DESCRIPTION`=':DESCRIPTION', `FIRSTFLIGHT`=':FIRSTFLIGHT', `PICS`=':PICS', `BILD`=':BILD', `TAGS`=':TAGS', `PRIO`=':PRIO' WHERE `ID`= ':ID'"); 
+  `DESCRIPTION`=':DESCRIPTION', `FIRSTFLIGHT`=':FIRSTFLIGHT', `BILD`=':BILD', `TAGS`=':TAGS', `PRIO`=':PRIO', `PICS`=':PICS' WHERE `ID`= ':ID'"); 
 
   $stmt->bindParam(':ID', $ID);
   $stmt->bindParam(':CREATEDATE', $CREATEDATE);
   $stmt->bindParam(':NAME', $NAME);
   $stmt->bindParam(':DESCRIPTION', $DESCRIPTION);
   $stmt->bindParam(':FIRSTFLIGHT', $FIRSTFLIGHT);
-  $stmt->bindParam(':PICS', $PICS);
   $stmt->bindParam(':BILD', $BILD);
   $stmt->bindParam(':TAGS', $TAGS);
   $stmt->bindParam(':PRIO', $PRIO);
+  $stmt->bindParam(':PICS', $PICS);
   $stmt->execute();
   header('Location: updatePage.php');
   die();

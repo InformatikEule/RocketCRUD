@@ -12,10 +12,22 @@ include_once('mySQL.php');
           $stmt->execute();
           $raketen = $stmt->fetchAll();
           
-if(isset($_POST['btnsound'])){
+//if(isset($_POST['btnsound'])){
+//}
 
+//wenn eine POST methode von "delete" ausgeführt wird
+if(isset($_POST['btnDelete'])){
+  include_once('mySQL.php');
+  $ID = $_POST['ID'];
+  //löschen den eintrag in der DB welcher die selbe ID hat	
+  $stmt = $mysql->prepare("DELETE FROM `raketen` WHERE `ID`='$ID'");
+  //$stmt->bind_param(':IDdel', $IDdel);
+  $stmt->execute();
+  header('Location: main.php');
+  die();
 }
-?> 
+ ?>
+
 
 <!--einfügen des Headers. --> 
 <?php include 'header.php' ?>
@@ -61,11 +73,13 @@ if(isset($_POST['btnsound'])){
 			  <h5 class="card-title text-secondary text-center fs-5 m-0 p-0">Tags:</h5>
 			  <p class="card-text fs-6 m-1 p-0 text-center"><?php echo $rakete['TAGS']; ?></p>
 			  <h5 class="card-title text-secondary text-center fs-5 m-0 p-0">Priorität:</h5>
-			  <p class="card-text fs-6 m-1 p-0 text-center"><?php echo $rakete['PRIO']; ?></p>
+			  <p class="card-text fs-6 m-1 p-0 text-center"><?php echo $rakete['PRIO']; ?></p>4
 
 			  <div class="card-footer">
-			    <input class="btn btn-danger" type="submit" name="delete" value="Rakete löschen">
+			  <form action="" method="post">
+			    <input class="btn btn-danger" type="submit" name="btnDelete" value="Rakete löschen">
 			    <input class="btn btn-warning" type="submit" name="btnupdatesp" value="Eintrag bearbeiten">
+			  </form>	
 			  </div>
 			</div>
           </div>
